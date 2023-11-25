@@ -1,0 +1,64 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("QP Hub", "Default")
+
+local Bladeball = DrRayLibrary.newTab("Bladeball", "ImageIdHere")
+
+
+Bladeball.newLabel("Made by @ScriptsQP :)")
+Bladeball.newButton("AutoParryV1", "basic :) And Runs Smoothly", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
+end)
+
+Bladeball.newButton("AutoDetectV1", "basic :) And Runs Smoothly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uwY3d8WR"))()
+end)
+
+Bladeball.newButton("HoldBlockV1", "basic :) And Runs Smoothly", function()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "â”ƒ SCRIPT By QP â”ƒ",
+	Text = "HoldBlockToSpam",
+	Duration = 50
+})
+
+getgenv().SpamSpeed = 1 -- 1-25
+
+if not getgenv().exeSpam then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
+end
+
+getgenv().exeSpam = true
+end)
+
+Bladeball.newButton("ToggleBlockV1", "basic :) And Runs Smoothly", function()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "â”ƒ SCRIPT By QP â”ƒ",
+    Text = "ToggleBlockSpam",
+    Duration = 50
+})
+
+getgenv().SpamSpeed = 1 -- 1-25
+
+if not getgenv().exeSpam then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Toggle%20Block%20Spam",true))()
+end
+
+getgenv().exeSpam = true
+end)
+
+Bladeball.newButton("manualSpam", "basic :) And Runs Smoothly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KB4xQe4j"))()
+end)
+
+Bladeball.newButton("ManualSpamV2", "Free :) And Runs Smoothly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/iYKdPkWC"))()
+end)
+
+
+local Misc = DrRayLibrary.newTab("Misc", "ImageIdHere")
+
+
+Misc.newLabel("thx for use Script. Have Fun TATAKEI! :)")
+Misc.newButton("Fps Booster", "Best FPS Booster :)", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/e3nBrjTS"))()
+end)
